@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+<bean id="he" class="com.spring.dependencyInjection.Hello">
+<constructor-arg value="99"/>
+</bean>
+
+<bean id="ha" class="com.spring.dependencyInjection.Hai">
+<property name="str" value="Haiya Guys"/>
+</bean>
+
+<bean id="aobj" class="com.spring.dependencyInjection.A">
+<property name="hello" ref="he"/>
+<property name="hai" ref="ha"/>
+</bean>
+
+<bean id="bobj" class="com.spring.dependencyInjection.B">
+<constructor-arg ref="he"/>
+<constructor-arg ref="ha"/>
+</bean>
+</beans>
