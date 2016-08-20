@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd"
+	xmlns:mjt="http://www.springframework.org/schema/p">
+
+
+<bean id="ao" class="com_006.spring.pnamespace.A" mjt:a="99" mjt:msg1="hai guys"/>
+<bean id="bo1" class="com_006.spring.pnamespace.B" mjt:b="22" mjt:a="11" mjt:msg1="hai guys" mjt:msg2="hello guys"/>
+<bean id="bo2" class="com_006.spring.pnamespace.B" mjt:b="22" mjt:msg2="Hello guys"/>
+
+ <!--Do not use Autowire with P-Namespace
+<bean id="hello" class="com.spring3.ioc.Hello" autowire="byType"/>
+  -->
+<bean id="hello" class="com_006.spring.pnamespace.Hello" mjt:aobj-ref="ao" mjt:bobj-ref="bo2"/>
+
+</beans>
