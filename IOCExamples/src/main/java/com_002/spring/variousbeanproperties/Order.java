@@ -1,4 +1,4 @@
-package com.spring.variousbeanproperties;
+package com_002.spring.variousbeanproperties;
 
 public class Order {
 private int orderId;

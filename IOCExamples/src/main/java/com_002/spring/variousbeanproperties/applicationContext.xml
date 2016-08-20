@@ -4,13 +4,13 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-<bean id="add" class="com.spring.variousbeanproperties.Address">
+<bean id="add" class="com_002.spring.variousbeanproperties.Address">
 <constructor-arg value="101"/>
 <constructor-arg value="HSR"/>
 <constructor-arg value="Blore"/>
 </bean>
 
-<bean id="order1" class="com.spring.variousbeanproperties.Order">
+<bean id="order1" class="com_002.spring.variousbeanproperties.Order">
 <property name="orderId" value="11"/>
 <property name="orderDate" value="10-10-10"/>
 <property name="qty" value="9"/>
@@ -18,7 +18,7 @@
 <property name="status" value="New"/>
 </bean>
 
-<bean id="order2" class="com.spring.variousbeanproperties.Order">
+<bean id="order2" class="com_002.spring.variousbeanproperties.Order">
 <property name="orderId" value="12"/>
 <property name="orderDate" value="10-10-10"/>
 <property name="qty" value="9"/>
@@ -26,7 +26,7 @@
 <property name="status" value="New"/>
 </bean>
 
-<bean id="cust" class="com.spring.variousbeanproperties.Customer">
+<bean id="cust" class="com_002.spring.variousbeanproperties.Customer">
 <constructor-arg value="1001"/>
 <constructor-arg value="ManjitSingh"/>
 

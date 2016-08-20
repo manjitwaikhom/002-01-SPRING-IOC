@@ -1,4 +1,4 @@
-package com.spring.dependencyInjection;
+package com_001.spring.dependencyInjection;
 
 public class A
 {

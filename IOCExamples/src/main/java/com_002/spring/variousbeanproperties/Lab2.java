@@ -1,4 +1,4 @@
-package com.spring.variousbeanproperties;
+package com_002.spring.variousbeanproperties;
 
 import java.util.*;
 
@@ -9,7 +9,7 @@ public class Lab2 {
 public static void main(String as[])
 {
 	System.out.println("Lab2-main function starts");
-	ApplicationContext ctx=new ClassPathXmlApplicationContext("com/spring/variousbeanproperties/applicationContext.xml");
+	ApplicationContext ctx=new ClassPathXmlApplicationContext("com_002/spring/variousbeanproperties/applicationContext.xml");
 	Customer c=(Customer)ctx.getBean("cust");
 	System.out.println("getCid()"+c.getCid());
 	System.out.println("getCname()"+c.getCname());
