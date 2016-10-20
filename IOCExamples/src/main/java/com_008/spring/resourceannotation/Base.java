@@ -2,7 +2,7 @@ package com_008.spring.resourceannotation;
 
 import javax.annotation.*;
 
-public class A {
+public class Base {
 	@Resource(name="hello1")
     Hello hello1;
 	

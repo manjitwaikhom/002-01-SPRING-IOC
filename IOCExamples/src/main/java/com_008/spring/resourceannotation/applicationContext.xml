@@ -22,7 +22,7 @@
 
 <bean id="hai" class="com_008.spring.resourceannotation.Hai" mjt:x="77" mjt:msg="Hai Guys"/>
 
-<bean id="aobj" class="com_008.spring.resourceannotation.A"/>
+<bean id="aobj" class="com_008.spring.resourceannotation.Base"/>
 
 <bean id="bobj" class="com_008.spring.resourceannotation.B" mjt:hello1-ref="hello1" mjt:hello2-ref="hello2"/>
 
