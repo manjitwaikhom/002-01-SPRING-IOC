@@ -9,10 +9,10 @@
 
 <context:annotation-config/>
 
-<bean id="hello" class="com_13.spring.lifecyclemethods.Hello" init-method="myInitMethod"/>
+<bean id="hello" class="com_013.spring.lifecyclemethods.Hello" init-method="myInitMethod"/>
 
 
-<bean id="hai" class="com_13.spring.lifecyclemethods.Hai" destroy-method="myDestroyMethod"/>
+<bean id="hai" class="com_013.spring.lifecyclemethods.Hai" destroy-method="myDestroyMethod"/>
 
 
 </beans>
