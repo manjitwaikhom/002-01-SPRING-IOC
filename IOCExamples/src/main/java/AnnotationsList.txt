@@ -1,0 +1,19 @@
+@Configuration
+@Bean
+@PreDestroy and @PostConstruct
+@ComponentScan
+@Component
+@PropertySource
+@PropertySources
+@Service
+@Repository
+@Autowired
+
+===MVC Annotations========
+@Controller
+@RequestMapping
+@PathVariable
+@RequestParam
+@ModelAttribute
+@RequestBody and @ResponseBody
+@RequestHeader and @ResponseHeader
