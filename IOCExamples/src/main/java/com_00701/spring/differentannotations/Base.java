@@ -2,6 +2,7 @@ package com_00701.spring.differentannotations;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Required;
 
 public class Base {
 	// simple autowired uses "by type" detection
@@ -37,4 +38,34 @@ public class Base {
 		hai.show();
 		hello.show();
 	}
+
+	public Hello getHello() {
+		return hello;
+	}
+
+	/* @Required This annotation is applied on bean setter methods. Consider a scenario where you need to enforce a required property.
+	The @Required annotation indicates that the affected bean must be populated at configuration time with the required property.
+	Otherwise an exception of type BeanInitializationException is thrown.*/
+	@Required
+	public void setHello(Hello hello) {
+		this.hello = hello;
+	}
+
+	public Hai getHai() {
+		return hai;
+	}
+
+	public void setHai(Hai hai) {
+		this.hai = hai;
+	}
+
+	public Bye getBye() {
+		return bye;
+	}
+
+	public void setBye(Bye bye) {
+		this.bye = bye;
+	}
+	
+	
 }
