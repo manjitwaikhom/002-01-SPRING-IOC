@@ -36,4 +36,6 @@ So in essence the method postProcessBeforeInitialization defined in the BeanPost
 The difference to the @PostConstruct, InitializingBean and custom init method is that these are defined on the bean itself.
  Their ordering can be found in the Combining lifecycle mechanisms section of the spring documentation.
 So basically the BeanPostProcessor can be used to do custom instantiation logic for several beans wheras the others are defined on a per bean basis.
+
+It allows direct modification of ean definations before the bean is instatiated.its an extension of conatinor functionality
  * */
