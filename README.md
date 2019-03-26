@@ -1,4 +1,4 @@
-# 002-01-SPRING-IOC
+# SPRING-IOC
 
 
 Java Version: 7,
